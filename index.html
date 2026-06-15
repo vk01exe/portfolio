@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Kumar Thakur | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#111827;
+padding:15px 0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+object-position:center top;
+border:5px solid #38bdf8;
+box-shadow:0 0 30px rgba(56,189,248,.8);
+}
+
+.hero h1{
+margin-top:20px;
+font-size:3rem;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:10px;
+font-size:1.2rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:12px 20px;
+border-radius:10px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero img{
+width:170px;
+height:170px;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<!-- Put your image in same folder and rename it to myphoto.jpg -->
+<img src="vk.jpeg" alt="Vishal Kumar Thakur">
+
+<h1>Hello, I'm <span>Vishal Kumar Thakur</span></h1>
+
+<p id="typing"></p>
+
+<a href="https://docs.google.com/document/d/1-fYm2AVmzqcm458rR2Nf3IM-DdAyCBEY/edit" target="_blank" class="btn">
+Download Resume
+</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<p>
+I am a Computer Science Engineering student at Bansal Institute of Science and Technology, Bhopal.
+Passionate about Web Development, Software Development and Emerging Technologies.
+I enjoy creating innovative solutions and continuously learning new technologies.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">C++</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Safe Path</h3>
+<p>
+Mobile application providing real-time weather alerts and travel hazard notifications.
+</p>
+</div>
+
+<div class="card">
+<h3>FarmDirect</h3>
+<p>
+Farmer-to-Consumer marketplace platform with product listing and order tracking.
+</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>
+Responsive portfolio website built using HTML, CSS and JavaScript.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+
+<p>📧 Email: vishalbist299@gmail.com</p>
+
+<p>📱 Phone: +91 7607154913</p>
+
+<p>
+🐱 GitHub:
+<a href="https://github.com/vk01exe" target="_blank">
+github.com/vk01exe
+</a>
+</p>
+
+<p>
+💼 LinkedIn:
+<a href="https://www.linkedin.com/in/vk01exe" target="_blank">
+linkedin.com/in/vk01exe
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Vishal Kumar Thakur | All Rights Reserved</p>
+</footer>
+
+<script>
+
+const text = [
+"Computer Science Engineering Student",
+"Web Developer",
+"Java Programmer",
+"Future Software Engineer"
+];
+
+let count = 0;
+let index = 0;
+
+(function type(){
+
+if(count === text.length){
+count = 0;
+}
+
+let currentText = text[count];
+let letter = currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === currentText.length){
+count++;
+index = 0;
+setTimeout(type,1500);
+}else{
+setTimeout(type,100);
+}
+
+})();
+
+</script>
+
+</body>
+</html>
